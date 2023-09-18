@@ -16,11 +16,25 @@ function App() {
   
   let [counter,setCounter] = useState(10)
   const addValue = ()=>{
-    setCounter(counter+1)
+    
+    if (counter>=30){
+      document.getElementById("add").disabled = true;
+    }
+    else{
+      setCounter(counter+1)
+    }
+    
   }
   
   const removeValue =()=>{
-    setCounter(counter-1)
+    // setCounter(counter-1)
+    if (counter<=0){
+      document.getElementById("remove").disabled = true;
+
+    }
+    else(
+      setCounter(counter-1)
+    )
   }
 
   return (
@@ -29,11 +43,11 @@ function App() {
       <h2>Counter value: {counter}</h2>
 
       <button
-      onClick={addValue}
+      onClick={addValue} id='add'
       >Add value {counter}</button> 
       <br />
       <button
-     onClick={removeValue}
+     onClick={removeValue} id='remove'
       >remove value {counter}</button>
       
     </>
