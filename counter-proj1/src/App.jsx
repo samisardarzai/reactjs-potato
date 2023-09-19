@@ -21,10 +21,10 @@ function App() {
       document.getElementById("add").disabled = true;
     }
     
-    setCounter(counter+1)
-    setCounter(counter+1)
-    setCounter(counter+1)
-    setCounter(counter+1)
+    setCounter(prevCounter=>prevCounter+1)
+    setCounter(prevCounter=>prevCounter+1)
+    setCounter(prevCounter=>prevCounter+1)
+    
     
   }
   
@@ -46,11 +46,11 @@ function App() {
 
       <button
       onClick={addValue} id='add'
-      >Add value {counter}</button> 
+      >Add value </button> 
       <br />
       <button
      onClick={removeValue} id='remove'
-      >remove value {counter}</button>
+      >remove value </button>
       
     </>
   )
