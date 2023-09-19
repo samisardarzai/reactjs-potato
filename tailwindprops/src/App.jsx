@@ -10,8 +10,8 @@ function App() {
     <>
         <div className=' p-6  bg-slate-400'>
         <Card  username="tax43"  btntext="Bye me "  />
-       <Card username="Termox" btntext="chuk me "  />
-       <Card username="Sarmone" />
+        <Card username="Termox" btntext="chuk me "  />
+        <Card username="Sarmone" />
         </div>
       
     </>
