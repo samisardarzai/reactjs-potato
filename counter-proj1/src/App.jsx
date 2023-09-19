@@ -20,9 +20,11 @@ function App() {
     if (counter>=30){
       document.getElementById("add").disabled = true;
     }
-    else{
-      setCounter(counter+1)
-    }
+    
+    setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
     
   }
   
